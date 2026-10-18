@@ -1,3 +1,3 @@
 spring:
   application:
-    name: f1hub-login
+    name: f1hub-auth

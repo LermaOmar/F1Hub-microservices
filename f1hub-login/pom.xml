@@ -9,7 +9,7 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>ptzt</groupId>
-	<artifactId>f1hub-login</artifactId>
+	<artifactId>f1hub-auth</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name/>
 	<description/>
