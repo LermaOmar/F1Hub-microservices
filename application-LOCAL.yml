@@ -1,7 +1,0 @@
-spring:
-  application:
-    name: f1hub
-  datasource:
-  url: jdbc:postgresql://localhost:5432/f1hub
-  username: admin
-  password: admin

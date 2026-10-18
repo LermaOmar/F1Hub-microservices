@@ -1,0 +1,28 @@
+spring:
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: admin
+    password: admin
+
+    listener:
+      simple:
+        acknowledge-mode: auto
+        prefetch: 10
+  application:
+    name: f1hub
+  datasource:
+  url: jdbc:postgresql://localhost:5432/f1hub
+  username: admin
+  password: admin
+
+app:
+  jwt:
+    #in a productive environment, it is needed to change this to an environment variable
+    secret: f83a8c1b1b8d9d4e3c6f58c37a7d8a4f73c9fdfaa8249e9f4c2c1d1b9f3a9d9b
+    issuer: f1hub-login
+    expiration: 3600
+  rabbitmq:
+    exchange: f1hub.topic
+    queue: f1hub.auth
+    routing-key: "auth.#"
